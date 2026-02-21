@@ -8,8 +8,7 @@ pipeline {
         }
         stage('Test') { 
             steps {
-            echo "stage-2"
-            }
+                sh 'python3 test.py'            }
         }
         stage('Deploy') { 
             steps {
