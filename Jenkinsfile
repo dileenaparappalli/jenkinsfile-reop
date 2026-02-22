@@ -9,7 +9,10 @@ pipeline {
         }
         stage('Test') { 
             steps {
-                sh 'python3 test.py'            }
+                sh 'python3 test.py'   
+                echo "Executed python script"
+                echo "Moving to next stage"
+            }
         }
         stage('Deploy') { 
             steps {
