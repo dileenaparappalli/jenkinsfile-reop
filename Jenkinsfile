@@ -19,6 +19,7 @@ pipeline {
             steps {
                 echo "stage-3"
                 echo "success"
+                echo "Completed"
             }
         }
     }
